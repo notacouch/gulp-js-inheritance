@@ -4,12 +4,12 @@ var es = require('event-stream');
 var _ = require('lodash');
 var fs = require('fs');
 var gutil = require('gulp-util');
-var sassGraph = require('sass-graph');
-var PLUGIN_NAME = 'gulp-sass-inheritance';
+var jsGraph = require('js-graph');
+var PLUGIN_NAME = 'gulp-js-inheritance';
 
 var stream;
 
-function gulpSassInheritance(options) {
+function gulpJsInheritance(options) {
   options = options || {};
 
   var files = [];
@@ -24,7 +24,7 @@ function gulpSassInheritance(options) {
     var stream = this;
     if (files.length) {
       var allPaths = _.pluck(files, 'path');
-      var graph = sassGraph.parseDir(options.dir, options);
+      var graph = jsGraph.parseDir(options.dir, options);
       var newFiles = files;
       _.forEach(files, function(file) {
         if (graph.index && graph.index[file.path]) {
@@ -69,4 +69,4 @@ function gulpSassInheritance(options) {
   return stream;
 }
 
-module.exports = gulpSassInheritance;
+module.exports = gulpJsInheritance;

@@ -1,27 +1,33 @@
 {
-  "name": "gulp-sass-inheritance",
-  "version": "0.5.1",
-  "description": "Rebuild only changed sass/scss files and all it's dependencies",
+  "name": "gulp-js-inheritance",
+  "version": "0.0.1",
+  "description": "Rebuild only changed js files and all it's dependencies",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git@github.com:berstend/gulp-sass-inheritance.git"
+    "url": "git@github.com:brnmonteiro/gulp-js-inheritance.git"
   },
   "keywords": [
     "gulpplugin",
-    "sass",
+    "js",
     "sass-inheritance",
     "sass-graph",
     "gulp-sass-graph",
     "sass-dependencies",
     "gulp-cached"
+    "js-inheritance",
+    "js-graph",
+    "gulp-js-graph",
+    "js-dependencies",
+    "gulp-cached"
+    
   ],
-  "author": "berstend & Juanfran Alcántara",
+  "author": "Bruno M",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/berstend/gulp-sass-inheritance/issues"
+    "url": "https://github.com/berstend/gulp-js-inheritance/issues"
   },
-  "homepage": "https://github.com/berstend/gulp-sass-inheritance",
+  "homepage": "https://github.com/brnmonteiro/gulp-js-inheritance",
   "dependencies": {
     "event-stream": "^3.1.7",
     "gulp-util": "^3.0.0",
