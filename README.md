@@ -2,13 +2,13 @@
 
 > Rebuild a js file with other files that have extended or included those file
 
-### Based on
+Based on
 [gulp-sass-inheritance](https://github.com/berstend/gulp-sass-inheritance)
 
-### Uses
+Uses
 [js-graph-imports](https://github.com/brnmonteiro/js-graph-imports) for the heavy lifting.
 
-### Suport
+Suport
 _partials.js and nested imports.
 Import in js:
 ```js
@@ -49,7 +49,7 @@ gulp.task('js', function() {
         return !/\/_/.test(file.path) || !/^_/.test(file.relative);
       }))
 
-      //process scss files
+      //process js files
       .pipe(uglify())
 
       //save all the files
