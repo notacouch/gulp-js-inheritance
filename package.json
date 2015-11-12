@@ -14,18 +14,17 @@
     "sass-graph",
     "gulp-sass-graph",
     "sass-dependencies",
-    "gulp-cached"
+    "gulp-cached",
     "js-inheritance",
     "js-graph",
     "gulp-js-graph",
     "js-dependencies",
     "gulp-cached"
-    
   ],
   "author": "Bruno M",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/berstend/gulp-js-inheritance/issues"
+    "url": "https://github.com/brnmonteiro/gulp-js-inheritance/issues"
   },
   "homepage": "https://github.com/brnmonteiro/gulp-js-inheritance",
   "dependencies": {
