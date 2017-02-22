@@ -1,3 +1,5 @@
+'use strict';
+
 var es = require('event-stream');
 var _ = require("lodash");
 var vfs = require('vinyl-fs');
@@ -42,7 +44,11 @@ function gulpJsInheritance(options) {
     function endStream() {
         if (files.length) {
 
-            graph = jsGraph.parseDir(options.dir, options);
+            if (typeof options.graph !== 'undefined') {
+                graph = options.graph;
+            } else {
+                graph = jsGraph.parseDir(options.dir, options);
+            }
 
             check(_.pluck(files, 'path'));
 
